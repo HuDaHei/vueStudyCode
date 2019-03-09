@@ -3,7 +3,7 @@
 </template>
 
 <script>
-console.log('start')
+console.log('start 生命周期')
 export default {
   name: 'HelloWorld',
   data () {
@@ -31,14 +31,14 @@ export default {
     console.log("created")
   },
   beforeMount () {
-     console.log("beforeMount")   
+     console.log("beforeMount")
   },
   mounted () {
       console.log("mounted");
       setTimeout(()=>{
         this.msg = "更新";
       }, 3000)
-   
+
   },
   updated() {
     console.log("update")
