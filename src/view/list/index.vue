@@ -15,9 +15,17 @@ export default {
         {
           path: '/HelloWorld',
           name: '生命周期顺序'
+        },
+        {
+          path: '/customevent',
+          name: '自定义事件'
+        },
+        {
+          path: '/daynamiccom',
+          name: '动态组件'
         }
       ]
-    }
+    };
   }
-}
+};
 </script>
