@@ -27,6 +27,18 @@ export default {
         {
           path: '/customTable',
           name: '自定义表格'
+        },
+        {
+          path: '/performanceData',
+          name: '性能测试Freeze'
+        },
+        {
+          path: '/performanceKeep',
+          name: '性能测试KeepAlive'
+        },
+        {
+          path: '/performanceLazy',
+          name: '性能测试KeepALazy'
         }
       ]
     };

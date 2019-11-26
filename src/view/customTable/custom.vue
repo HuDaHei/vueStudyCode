@@ -40,158 +40,158 @@
 </template>
 
 <script>
-  export default {
-    data() {
-      return {
-        tableData: [{
-          date: '2016-05-03',
-          name: 'ooo',
-          address: '上海市普陀区金沙江路 1518 弄'
-        }, {
-          date: '2016-05-02',
-          name: '王小虎',
-          address: '上海市普陀区金沙江路 1518 弄'
-        }, {
-          date: '2016-05-04',
-          name: '王小虎',
-          address: '上海市普陀区金沙江路 1518 弄'
-        }, {
-          date: '2016-05-01',
-          name: 'er',
-          address: '上海市普陀区金沙江路 1518 弄'
-        },{
-          date: '2016-05-03',
-          name: 'ooo',
-          address: '上海市普陀区金沙江路 1518 弄'
-        }, {
-          date: '2016-05-02',
-          name: '王小虎',
-          address: '上海市普陀区金沙江路 1518 弄'
-        }, {
-          date: '2016-05-04',
-          name: '王小虎',
-          address: '上海市普陀区金沙江路 1518 弄'
-        }, {
-          date: '2016-05-01',
-          name: 's',
-          address: '上海市普陀区金沙江路 1518 弄'
-        },{
-          date: '2016-05-03',
-          name: 'ooo',
-          address: '上海市普陀区金沙江路 1518 弄'
-        }, {
-          date: '2016-05-02',
-          name: '王小虎',
-          address: '上海市普陀区金沙江路 1518 弄'
-        }, {
-          date: '2016-05-04',
-          name: '王小虎',
-          address: '上海市普陀区金沙江路 1518 弄'
-        }, {
-          date: '2016-05-01',
-          name: 's',
-          address: '上海市普陀区金沙江路 1518 弄'
-        },{
-          date: '2016-05-03',
-          name: 'ooo',
-          address: '上海市普陀区金沙江路 1518 弄'
-        }, {
-          date: '2016-05-02',
-          name: '王小虎',
-          address: '上海市普陀区金沙江路 1518 弄'
-        }, {
-          date: '2016-05-04',
-          name: '',
-          address: '上海市普陀区金沙江路 1518 弄'
-        }, {
-          date: '2016-05-01',
-          name: 's',
-          address: '上海市普陀区金沙江路 1518 弄'
-        },{
-          date: '2016-05-03',
-          name: 'ooo',
-          address: '上海市普陀区金沙江路 1518 弄'
-        }, {
-          date: '2016-05-02',
-          name: 's',
-          address: '上海市普陀区金沙江路 1518 弄'
-        }, {
-          date: '2016-05-04',
-          name: '王小虎', 
-          address: '上海市普陀区金沙江路 1518 弄'
-        }, {
-          date: '2016-05-01',
-          name: 's',
-          address: '上海市普陀区金沙江路 1518 弄'
-        },{
-          date: '2016-05-03',
-          name: 'ooo',
-          address: '上海市普陀区金沙江路 1518 弄'
-        }, {
-          date: '2016-05-02',
-          name: 'ret',
-          address: '上海市普陀区金沙江路 1518 弄'
-        }, {
-          date: '2016-05-04',
-          name: 'ss',
-          address: '上海市普陀区金沙江路 1518 弄'
-        }, {
-          date: '2016-05-01',
-          name: 'df',
-          address: '上海市普陀区金沙江路 1518 弄'
-        }],
-        multipleSelection: []
+export default {
+  data () {
+    return {
+      tableData: [{
+        date: '2016-05-03',
+        name: 'ooo',
+        address: '上海市普陀区金沙江路 1518 弄'
+      }, {
+        date: '2016-05-02',
+        name: '王小虎',
+        address: '上海市普陀区金沙江路 1518 弄'
+      }, {
+        date: '2016-05-04',
+        name: '王小虎',
+        address: '上海市普陀区金沙江路 1518 弄'
+      }, {
+        date: '2016-05-01',
+        name: 'er',
+        address: '上海市普陀区金沙江路 1518 弄'
+      }, {
+        date: '2016-05-03',
+        name: 'ooo',
+        address: '上海市普陀区金沙江路 1518 弄'
+      }, {
+        date: '2016-05-02',
+        name: '王小虎',
+        address: '上海市普陀区金沙江路 1518 弄'
+      }, {
+        date: '2016-05-04',
+        name: '王小虎',
+        address: '上海市普陀区金沙江路 1518 弄'
+      }, {
+        date: '2016-05-01',
+        name: 's',
+        address: '上海市普陀区金沙江路 1518 弄'
+      }, {
+        date: '2016-05-03',
+        name: 'ooo',
+        address: '上海市普陀区金沙江路 1518 弄'
+      }, {
+        date: '2016-05-02',
+        name: '王小虎',
+        address: '上海市普陀区金沙江路 1518 弄'
+      }, {
+        date: '2016-05-04',
+        name: '王小虎',
+        address: '上海市普陀区金沙江路 1518 弄'
+      }, {
+        date: '2016-05-01',
+        name: 's',
+        address: '上海市普陀区金沙江路 1518 弄'
+      }, {
+        date: '2016-05-03',
+        name: 'ooo',
+        address: '上海市普陀区金沙江路 1518 弄'
+      }, {
+        date: '2016-05-02',
+        name: '王小虎',
+        address: '上海市普陀区金沙江路 1518 弄'
+      }, {
+        date: '2016-05-04',
+        name: '',
+        address: '上海市普陀区金沙江路 1518 弄'
+      }, {
+        date: '2016-05-01',
+        name: 's',
+        address: '上海市普陀区金沙江路 1518 弄'
+      }, {
+        date: '2016-05-03',
+        name: 'ooo',
+        address: '上海市普陀区金沙江路 1518 弄'
+      }, {
+        date: '2016-05-02',
+        name: 's',
+        address: '上海市普陀区金沙江路 1518 弄'
+      }, {
+        date: '2016-05-04',
+        name: '王小虎',
+        address: '上海市普陀区金沙江路 1518 弄'
+      }, {
+        date: '2016-05-01',
+        name: 's',
+        address: '上海市普陀区金沙江路 1518 弄'
+      }, {
+        date: '2016-05-03',
+        name: 'ooo',
+        address: '上海市普陀区金沙江路 1518 弄'
+      }, {
+        date: '2016-05-02',
+        name: 'ret',
+        address: '上海市普陀区金沙江路 1518 弄'
+      }, {
+        date: '2016-05-04',
+        name: 'ss',
+        address: '上海市普陀区金沙江路 1518 弄'
+      }, {
+        date: '2016-05-01',
+        name: 'df',
+        address: '上海市普陀区金沙江路 1518 弄'
+      }],
+      multipleSelection: []
+    };
+  },
+
+  methods: {
+    toggleSelection (rows) {
+      if (rows) {
+        rows.forEach(row => {
+          this.$refs.multipleTable.toggleRowSelection(row);
+        });
+      } else {
+        this.$refs.multipleTable.clearSelection();
       }
     },
-
-    methods: {
-      toggleSelection(rows) {
-        if (rows) {
-          rows.forEach(row => {
-            this.$refs.multipleTable.toggleRowSelection(row);
-          });
-        } else {
-          this.$refs.multipleTable.clearSelection();
-        }
-      },
-      handleSelectionChange(val) {
-        this.multipleSelection = val;
-      },
-      // render-header
-      renderTableheader(h, {column, $index}) {
-        return h('span',{
-          style: {
-            color: 'red'
-          },
-          on: {
-            'click': ()=> {
-              alert("llll")
-            }
+    handleSelectionChange (val) {
+      this.multipleSelection = val;
+    },
+    // render-header
+    renderTableheader (h, {column, $index}) {
+      return h('span', {
+        style: {
+          color: 'red'
+        },
+        on: {
+          'click': () => {
+            alert('llll');
           }
-        },[
-          h('span',{},'我滴天'),
-          h('i',{
-            class: {
-              'el-icon-delete': true
-            }
-          })
-        ]);
-      },
-      //cell-style 
-      cellStyle({row, column, rowIndex, columnIndex}) {
-        // console.log({row, column, rowIndex, columnIndex}, "{row, column, rowIndex, columnIndex}")
-        // console.log(row[column.property], column.property)
-        const tableDom = document.getElementById('multipleTables');
-        const xx = document.getElementsByClassName('el-table__body-wrapper')[0]
-        const trDom = tableDom.getElementsByTagName('tr')
-        if(!row[column.property] && columnIndex !== 0) {
-          let tr = trDom[rowIndex+1];
-          console.log(tr.offsetTop)
-            xx.scrollTop= tr.offsetTop - 175;
-          console.log(tableDom.scrollTop)
-          return `background:red`
         }
+      }, [
+        h('span', {}, '我滴天'),
+        h('i', {
+          class: {
+            'el-icon-delete': true
+          }
+        })
+      ]);
+    },
+    // cell-style
+    cellStyle ({row, column, rowIndex, columnIndex}) {
+      // console.log({row, column, rowIndex, columnIndex}, "{row, column, rowIndex, columnIndex}")
+      // console.log(row[column.property], column.property)
+      const tableDom = document.getElementById('multipleTables');
+      const xx = document.getElementsByClassName('el-table__body-wrapper')[0];
+      const trDom = tableDom.getElementsByTagName('tr');
+      if (!row[column.property] && columnIndex !== 0) {
+        let tr = trDom[rowIndex + 1];
+        console.log(tr.offsetTop);
+        xx.scrollTop = tr.offsetTop - 175;
+        console.log(tableDom.scrollTop);
+        return `background:red`;
       }
     }
   }
+};
 </script>
