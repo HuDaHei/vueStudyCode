@@ -143,55 +143,44 @@
         multipleSelection: []
       }
     },
-
-    methods: {
-      toggleSelection(rows) {
-        if (rows) {
-          rows.forEach(row => {
-            this.$refs.multipleTable.toggleRowSelection(row);
-          });
-        } else {
-          this.$refs.multipleTable.clearSelection();
-        }
-      },
-      handleSelectionChange(val) {
-        this.multipleSelection = val;
-      },
-      // render-header
-      renderTableheader(h, {column, $index}) {
-        return h('span',{
-          style: {
-            color: 'red'
-          },
-          on: {
-            'click': ()=> {
-              alert("llll")
-            }
+    handleSelectionChange (val) {
+      this.multipleSelection = val;
+    },
+    // render-header
+    renderTableheader (h, {column, $index}) {
+      return h('span', {
+        style: {
+          color: 'red'
+        },
+        on: {
+          'click': () => {
+            alert('llll');
           }
-        },[
-          h('span',{},'我滴天'),
-          h('i',{
-            class: {
-              'el-icon-delete': true
-            }
-          })
-        ]);
-      },
-      //cell-style 
-      cellStyle({row, column, rowIndex, columnIndex}) {
-        // console.log({row, column, rowIndex, columnIndex}, "{row, column, rowIndex, columnIndex}")
-        // console.log(row[column.property], column.property)
-        const tableDom = document.getElementById('multipleTables');
-        const xx = document.getElementsByClassName('el-table__body-wrapper')[0]
-        const trDom = tableDom.getElementsByTagName('tr')
-        if(!row[column.property] && columnIndex !== 0) {
-          let tr = trDom[rowIndex+1];
-          console.log(tr.offsetTop)
-            xx.scrollTop= tr.offsetTop - 175;
-          console.log(tableDom.scrollTop)
-          return `background:red`
         }
+      }, [
+        h('span', {}, '我滴天'),
+        h('i', {
+          class: {
+            'el-icon-delete': true
+          }
+        })
+      ]);
+    },
+    // cell-style
+    cellStyle ({row, column, rowIndex, columnIndex}) {
+      // console.log({row, column, rowIndex, columnIndex}, "{row, column, rowIndex, columnIndex}")
+      // console.log(row[column.property], column.property)
+      const tableDom = document.getElementById('multipleTables');
+      const xx = document.getElementsByClassName('el-table__body-wrapper')[0];
+      const trDom = tableDom.getElementsByTagName('tr');
+      if (!row[column.property] && columnIndex !== 0) {
+        let tr = trDom[rowIndex + 1];
+        console.log(tr.offsetTop);
+        xx.scrollTop = tr.offsetTop - 175;
+        console.log(tableDom.scrollTop);
+        return `background:red`;
       }
     }
   }
+};
 </script>

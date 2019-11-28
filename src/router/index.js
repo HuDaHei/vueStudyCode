@@ -35,6 +35,20 @@ export default new Router({
       path: '/video',
       name: 'video',
       component: () => import(/* webpackChunkName: "group-video" */ '@/view/video/video.vue')
+    },{
+      path: '/performanceData',
+      name: 'performanceData',
+      component: () => import(/* webpackChunkName: "group-custome" */ '@/view/performance/testData.vue')
+    },
+    {
+      path: '/performanceKeep',
+      name: 'performanceKeep',
+      component: () => import(/* webpackChunkName: "group-custome" */ '@/view/performance/keepAlive.vue')
+    },
+    {
+      path: '/performanceLazy',
+      name: '/performanceLazy',
+      component: () => import(/* webpackChunkName: "group-custome" */ '@/view/performance/lazyCom.vue')
     }
   ]
 });

@@ -6,9 +6,9 @@
   </el-table>
 </template>
 
-  <script>
+<script>
 export default {
-  data() {
+  data () {
     return {};
   },
   props: {
@@ -17,7 +17,7 @@ export default {
     }
   },
   methods: {
-    objectSpanMethod({ row, column, rowIndex, columnIndex }) {
+    objectSpanMethod ({ row, column, rowIndex, columnIndex }) {
       if (columnIndex < row.row) {
         if (rowIndex % 5 === 0) {
           return {
@@ -31,7 +31,7 @@ export default {
           };
         }
       } else if (row.col.includes(columnIndex)) {
-      if (row.merge === 'down') {
+        if (row.merge === 'down') {
           return {
             rowspan: 2,
             colspan: 1
@@ -47,7 +47,7 @@ export default {
             colspan: 0
           };
         }
-        //////////////
+        /// ///////////
         // if (rowIndex === 0 || rowIndex===3) {
         //   return {
         //     rowspan: 2,
@@ -64,14 +64,14 @@ export default {
         //     colspan: 0
         //   };
         // }
-        /////////////////
+        /// //////////////
         // } else {
         //   return {
         //     rowspan: 0,
         //     colspan:0
         //   };
         // }
-        ///////////////
+        /// ////////////
         // if (rowIndex % 2 === 0) {
         //   return {
         //     rowspan: 2,
