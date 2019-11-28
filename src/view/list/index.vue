@@ -27,6 +27,10 @@ export default {
         {
           path: '/customTable',
           name: '自定义表格'
+        },
+        {
+          path: '/video',
+          name: 'video'
         }
       ]
     };

@@ -30,6 +30,11 @@ export default new Router({
       path: '/customTable',
       name: 'customTable',
       component: () => import(/* webpackChunkName: "group-custome" */ '@/view/customTable/custom.vue')
+    },
+    {
+      path: '/video',
+      name: 'video',
+      component: () => import(/* webpackChunkName: "group-video" */ '@/view/video/video.vue')
     }
   ]
 });
