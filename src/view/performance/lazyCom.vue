@@ -7,18 +7,18 @@
 <script>
 // import lazyPage from './lazyPage'
 export default {
-  components:{
+  components: {
     'lazy-page': () => import('./lazyPage')
   },
-  data() {
+  data () {
     return {
       componentsId: ''
-    }
+    };
   },
   methods: {
-    lazyCom() {
-      this.componentsId = 'lazy-page'
+    lazyCom () {
+      this.componentsId = 'lazy-page';
     }
   }
-}
+};
 </script>

@@ -45,6 +45,11 @@ export default new Router({
       path: '/performanceLazy',
       name: '/performanceLazy',
       component: () => import(/* webpackChunkName: "group-custome" */ '@/view/performance/lazyCom.vue')
+    },
+    {
+      path: '/date',
+      name: '/date',
+      component: () => import(/* webpackChunkName: "group-custome" */ '@/view/date/index.vue')
     }
   ]
 });

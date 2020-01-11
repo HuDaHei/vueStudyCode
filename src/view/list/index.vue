@@ -39,6 +39,10 @@ export default {
         {
           path: '/performanceLazy',
           name: '性能测试KeepALazy'
+        },
+        {
+          path: '/date',
+          name: '日历'
         }
       ]
     };
