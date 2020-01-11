@@ -1,11 +1,21 @@
 <template>
-<div>{{com}} 周期阶段{{msg}}</div>
+<div v-test>{{com}} 周期阶段{{msg}}</div>
 </template>
 
 <script>
 console.log('start 生命周期 -----------第一步');
 export default {
   name: 'HelloWorld',
+  directives: {
+    test: {
+      bind() {
+        console.log('指令的bind钩子函数')
+      },
+      inserted(){
+        console.log('指令的inserted钩子函数')
+      }
+    }
+  },
   data () {
     console.log('data-----------第二步');
     return {

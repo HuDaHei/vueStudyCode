@@ -29,6 +29,10 @@ export default {
           name: '自定义表格'
         },
         {
+          path: '/video',
+          name: 'video'
+        },
+        {
           path: '/performanceData',
           name: '性能测试Freeze'
         },
