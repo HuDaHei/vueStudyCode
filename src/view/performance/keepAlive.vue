@@ -3,9 +3,9 @@
     <button @click="toggleComponet">test-one</button>
     <button @click="toggleComponet2">test-two</button>
     <div>
-      <keep-alive>
+      <!-- <keep-alive> -->
         <component :is="componentId"></component>
-      </keep-alive>
+      <!-- </keep-alive>S -->
     </div>
   </div>
 </template>

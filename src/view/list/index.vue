@@ -37,13 +37,17 @@ export default {
           name: '性能测试Freeze'
         },
         {
-          path: '/performanceKeep',
+          path: '/performanceKeep', 
           name: '性能测试KeepAlive'
         },
         {
           path: '/performanceLazy',
           name: '性能测试KeepALazy'
-        }
+        },
+        {
+          path: '/function',
+          name: '性能测试functional'
+        },
       ]
     };
   }

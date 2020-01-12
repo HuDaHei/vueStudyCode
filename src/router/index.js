@@ -49,6 +49,11 @@ export default new Router({
       path: '/performanceLazy',
       name: '/performanceLazy',
       component: () => import(/* webpackChunkName: "group-custome" */ '@/view/performance/lazyCom.vue')
+    },
+    {
+      path: '/function',
+      name: '/function',
+      component: () => import(/* webpackChunkName: "group-custome" */ '@/view/performance/functional.vue')
     }
   ]
 });
