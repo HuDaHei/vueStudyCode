@@ -48,6 +48,11 @@ export default {
           path: '/function',
           name: '性能测试functional'
         },
+        {
+          path: '/date',
+          name: '日历'
+        }
+        // }
       ]
     };
   }

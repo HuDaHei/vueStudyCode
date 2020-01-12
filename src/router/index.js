@@ -54,6 +54,11 @@ export default new Router({
       path: '/function',
       name: '/function',
       component: () => import(/* webpackChunkName: "group-custome" */ '@/view/performance/functional.vue')
+    },
+    {
+      path: '/date',
+      name: '/date',
+      component: () => import(/* webpackChunkName: "group-custome" */ '@/view/date/index.vue')
     }
   ]
 });
