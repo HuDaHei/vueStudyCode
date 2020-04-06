@@ -12,14 +12,23 @@
         <p>six</p>
       </template>
     </cl-func>
+    <func-render>
+      <template v-slot:onefunc>
+        <p>one</p>
+        <p>two</p>
+      </template>
+      <div>renderfunc</div>
+    </func-render>
   </div>
 </template>
 <script>
 import func from "./func";
+import funcRender from './func_render'
 export default {
   name: "functionalll",
   components: {
-    "cl-func": func
+    "cl-func": func,
+    'func-render': funcRender
   },
   data() {
     return {
