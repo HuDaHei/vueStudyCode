@@ -35,7 +35,7 @@ export default new Router({
       path: '/video',
       name: 'video',
       component: () => import(/* webpackChunkName: "group-video" */ '@/view/video/video.vue')
-    },{
+    }, {
       path: '/performanceData',
       name: 'performanceData',
       component: () => import(/* webpackChunkName: "group-custome" */ '@/view/performance/testData.vue')
@@ -59,7 +59,7 @@ export default new Router({
       path: '/date',
       name: '/date',
       component: () => import(/* webpackChunkName: "group-custome" */ '@/view/date/index.vue')
-    },{
+    }, {
       path: '/drag',
       component: () => import('@/view/drage/drage.vue')
     },
@@ -69,7 +69,7 @@ export default new Router({
       children: [{
         path: 'seconde',
         component: () => import('@/view/routerLink/seconde.vue'),
-        children:[
+        children: [
           {
             path: 'three',
             component: () => import('@/view/routerLink/three')
@@ -80,7 +80,10 @@ export default new Router({
     {
       path: '/tree',
       component: () => import('@/view/tree')
+    },
+    {
+      path: '/watchInner',
+      component: () => import('@/view/watchInner')
     }
   ]
 });
-

@@ -37,7 +37,7 @@ export default {
           name: '性能测试Freeze'
         },
         {
-          path: '/performanceKeep', 
+          path: '/performanceKeep',
           name: '性能测试KeepAlive'
         },
         {
@@ -55,12 +55,15 @@ export default {
         {
           path: '/drag',
           name: '树形拖拽'
-        },{
+        }, {
           path: '/first',
           name: '层级跳转'
-        },{
+        }, {
           path: '/tree',
           name: '改造树'
+        }, {
+          path: '/watchInner',
+          name: '监听组件内部生命周期'
         }
         // }
       ]
