@@ -59,6 +59,28 @@ export default new Router({
       path: '/date',
       name: '/date',
       component: () => import(/* webpackChunkName: "group-custome" */ '@/view/date/index.vue')
+    },{
+      path: '/drag',
+      component: () => import('@/view/drage/drage.vue')
+    },
+    {
+      path: '/first',
+      component: () => import('@/view/routerLink/first.vue'),
+      children: [{
+        path: 'seconde',
+        component: () => import('@/view/routerLink/seconde.vue'),
+        children:[
+          {
+            path: 'three',
+            component: () => import('@/view/routerLink/three')
+          }
+        ]
+      }]
+    },
+    {
+      path: '/tree',
+      component: () => import('@/view/tree')
     }
   ]
 });
+
