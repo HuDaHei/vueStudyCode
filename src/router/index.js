@@ -84,6 +84,14 @@ export default new Router({
     {
       path: '/watchInner',
       component: () => import('@/view/watchInner')
+    },
+    {
+      path: '/countto',
+      component: () => import('@/view/countto')
+    },
+    {
+      path: '/operateTree',
+      component: () => import('@/view/operateTree/index.vue')
     }
   ]
 });

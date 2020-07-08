@@ -1,9 +1,17 @@
 <template>
   <div style="display:flex">
     <div style="width:400px;">
-      <el-tree :data="data" :props="defaultProps" @node-click="handleNodeClick" show-checkbox>
-        <span slot-scope="{ node ,data}">
-          <span class="dy-append" :class="data.calssName">{{ node.label }}</span>
+      <el-tree
+        :data="data"
+        :props="defaultProps"
+        @node-click="handleNodeClick"
+        icon-class="el-icon-edits"
+        show-checkbox
+      >
+        <span slot-scope="{ node, data }">
+          <span class="dy-append" :class="data.calssName">{{
+            node.label
+          }} 123</span>
         </span>
       </el-tree>
     </div>
@@ -22,7 +30,8 @@ export default {
               label: "二级 1-1",
               children: [
                 {
-                  label: "三级 1-1-1"
+                  label: "三级 1-1-1",
+                  show:false
                 },
                 {
                   label: "三级 1-1-2"
@@ -52,8 +61,8 @@ export default {
         }
       ];
       appendData.forEach(ap => {
-          data.children.push(ap)
-      })
+        data.children.push(ap);
+      });
     },
     // 给包含 addpend-people className的全部移动到 右侧
     // el-tree-node
@@ -61,5 +70,4 @@ export default {
   }
 };
 </script>
-<style  scoped>
-</style>
+<style scoped></style>

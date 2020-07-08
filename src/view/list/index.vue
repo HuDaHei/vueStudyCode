@@ -64,6 +64,14 @@ export default {
         }, {
           path: '/watchInner',
           name: '监听组件内部生命周期'
+        },
+        {
+          path: 'countto',
+          name: '数据动态'
+        },
+        {
+          path: '/operateTree',
+          name: '二次改造tree'
         }
         // }
       ]
