@@ -72,6 +72,10 @@ export default {
         {
           path: '/operateTree',
           name: '二次改造tree'
+        },
+        {
+          path: '/cascade',
+          name: '行业级联'
         }
         // }
       ]

@@ -92,6 +92,10 @@ export default new Router({
     {
       path: '/operateTree',
       component: () => import('@/view/operateTree/index.vue')
+    },
+    {
+      path: '/cascade',
+      component: () => import('@/view/industrycascade/index.vue')
     }
   ]
 });

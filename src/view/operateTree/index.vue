@@ -4,7 +4,7 @@
   <div class="variation-tree_checkBox">
     <div class="variation-tree_left">
       <h4>客户列表</h4>
-      <el-scrollbar style="height:150px">
+      <el-scrollbar style="height:190px">
         <vue-tree
           :data="list"
           @check="checkChange"
@@ -20,7 +20,7 @@
     </div>
     <div class="variation-tree_right">
       <h4>账户列表</h4>
-      <el-scrollbar style="height:160px">
+      <el-scrollbar style="height:190px">
         <el-checkbox-group
           v-model="temp"
           @change="checkboxChange"
