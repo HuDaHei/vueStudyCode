@@ -96,6 +96,10 @@ export default new Router({
     {
       path: '/cascade',
       component: () => import('@/view/industrycascade/index.vue')
+    },
+    {
+      path: '/longList',
+      component: () => import('@/view/longList/index.vue')
     }
   ]
 });

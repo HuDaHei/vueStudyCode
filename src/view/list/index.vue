@@ -76,6 +76,10 @@ export default {
         {
           path: '/cascade',
           name: '行业级联'
+        },
+        {
+          path: 'longList',
+          name: '长列表优化'
         }
         // }
       ]
